@@ -16,18 +16,19 @@ const HeroSection = () => {
         <div className="absolute inset-0 bg-gradient-to-t from-background via-background/40 to-background/20" />
       </div>
 
-      {/* Top: subtitle */}
-      <motion.p
-        initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.6, delay: 0.2 }}
-        className="relative z-10 text-muted-foreground text-sm tracking-[0.3em] uppercase text-center pt-16 md:pt-20"
-      >
-        Гастро-контент проект
-      </motion.p>
+      {/* Top spacer: pushes content down to reveal face */}
+      <div className="relative z-10 flex-1" />
 
-      {/* Middle: title + description + profile */}
+      {/* Content block: title + description + profile */}
       <div className="relative z-10 text-center px-6 max-w-4xl mx-auto">
+        <motion.p
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.2 }}
+          className="text-muted-foreground text-sm tracking-[0.3em] uppercase mb-6"
+        >
+          Гастро-контент проект
+        </motion.p>
         <motion.h1
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
@@ -60,7 +61,7 @@ const HeroSection = () => {
             </div>
             <div className="text-left">
               <p className="text-foreground text-sm font-medium">@ip.chaser</p>
-              <p className="text-muted-foreground text-xs">
+              <p className="text-muted-foreground text-[11px] whitespace-nowrap">
                 180 000 подписчиков • Организатор грибных туров и шеф-ужинов
               </p>
             </div>
