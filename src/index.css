@@ -72,6 +72,16 @@
     @apply overflow-hidden rounded-lg transition-all duration-500 ease-out;
   }
 
+  .hero-image {
+    object-position: center 5%;
+  }
+
+  @media (min-width: 768px) {
+    .hero-image {
+      object-position: center 30%;
+    }
+  }
+
   .image-card:hover {
     transform: scale(1.02);
     box-shadow: 0 20px 60px -15px hsla(0, 0%, 100%, 0.08);

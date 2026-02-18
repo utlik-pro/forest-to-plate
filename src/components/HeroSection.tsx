@@ -9,7 +9,7 @@ const HeroSection = () => {
         <img
           src={heroImage}
           alt="Премиум грибное блюдо"
-          className="w-full h-full object-cover object-[center_5%] md:object-[center_30%]"
+          className="w-full h-full object-cover hero-image"
         />
         <div className="absolute inset-0 bg-background/70" />
         <div className="absolute inset-0 bg-gradient-to-t from-background via-background/40 to-background/20" />
