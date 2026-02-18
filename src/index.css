@@ -73,7 +73,7 @@
   }
 
   .hero-image {
-    object-position: center 5%;
+    object-position: center 0%;
   }
 
   @media (min-width: 768px) {
