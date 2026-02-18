@@ -3,7 +3,7 @@ import heroImage from "@/assets/hero-mushroom.jpg";
 
 const HeroSection = () => {
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+    <section className="relative min-h-screen flex items-start pt-24 md:items-center md:pt-0 justify-center overflow-hidden">
       {/* Background image */}
       <div className="absolute inset-0">
         <img
@@ -11,7 +11,7 @@ const HeroSection = () => {
           alt="Премиум грибное блюдо"
           className="w-full h-full object-cover hero-image"
         />
-        <div className="absolute inset-0 bg-background/70" />
+        <div className="absolute inset-0 bg-background/50 md:bg-background/70" />
         <div className="absolute inset-0 bg-gradient-to-t from-background via-background/40 to-background/20" />
       </div>
 
