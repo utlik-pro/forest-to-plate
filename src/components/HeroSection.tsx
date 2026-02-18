@@ -17,7 +17,7 @@ const HeroSection = () => {
       </div>
 
       {/* Top spacer: pushes content down to reveal face */}
-      <div className="relative z-10 flex-1" />
+      <div className="relative z-10 flex-[2]" />
 
       {/* Content block: title + description + profile */}
       <div className="relative z-10 text-center px-6 max-w-4xl mx-auto">
@@ -33,7 +33,7 @@ const HeroSection = () => {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.4 }}
-          className="text-5xl md:text-7xl lg:text-8xl font-bold tracking-tight text-foreground mb-6"
+          className="text-4xl md:text-7xl lg:text-8xl font-bold tracking-tight text-foreground mb-4"
         >
           Грибная
           <br />
@@ -44,7 +44,7 @@ const HeroSection = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.7 }}
-          className="text-lg md:text-xl text-muted-foreground max-w-xl mx-auto mb-8 font-light"
+          className="text-sm md:text-xl text-muted-foreground max-w-xl mx-auto mb-4 font-light"
         >
           От леса до тарелки: честное расследование грибных блюд
         </motion.p>
@@ -61,16 +61,19 @@ const HeroSection = () => {
             </div>
             <div className="text-left">
               <p className="text-foreground text-sm font-medium">@ip.chaser</p>
-              <p className="text-muted-foreground text-[11px] whitespace-nowrap">
-                180 000 подписчиков • Организатор грибных туров и шеф-ужинов
+              <p className="text-muted-foreground text-xs">
+                180 000 подписчиков • Грибные туры и шеф-ужины
               </p>
             </div>
           </div>
         </motion.div>
       </div>
 
+      {/* Bottom spacer */}
+      <div className="relative z-10 flex-1" />
+
       {/* Bottom: CTA button + scroll indicator */}
-      <div className="relative z-10 flex flex-col items-center gap-8 pb-10">
+      <div className="relative z-10 flex flex-col items-center gap-6 pb-8">
         <motion.a
           href="#contact"
           initial={{ opacity: 0, y: 20 }}
