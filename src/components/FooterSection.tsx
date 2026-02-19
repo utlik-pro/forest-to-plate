@@ -1,3 +1,5 @@
+import { Heart } from "lucide-react";
+
 const FooterSection = () => {
   return (
     <footer className="py-16 px-6 border-t border-border">
@@ -23,15 +25,17 @@ const FooterSection = () => {
         </div>
       </div>
       <div className="max-w-6xl mx-auto mt-8 text-center">
-        <p className="text-muted-foreground/50 text-xs font-light">
-          сделано с любовью ❤️ в{" "}
+        <p className="text-muted-foreground/50 text-xs font-light inline-flex items-center gap-1 justify-center w-full">
+          Сделано с любовью{" "}
+          <Heart className="w-3 h-3 fill-current" />
+          {" "}в{" "}
           <a
             href="https://t.me/dmitryutlik"
             target="_blank"
             rel="noopener noreferrer"
             className="italic hover:text-muted-foreground transition-colors"
           >
-            Utlik.Co
+            Utlik<span className="font-bold">.</span>Co
           </a>
         </p>
       </div>
