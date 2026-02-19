@@ -22,6 +22,19 @@ const FooterSection = () => {
           </a>
         </div>
       </div>
+      <div className="max-w-6xl mx-auto mt-8 text-center">
+        <p className="text-muted-foreground/50 text-xs font-light">
+          сделано с любовью ❤️ в{" "}
+          <a
+            href="https://t.me/dmitryutlik"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="italic hover:text-muted-foreground transition-colors"
+          >
+            Utlik.Co
+          </a>
+        </p>
+      </div>
     </footer>
   );
 };
