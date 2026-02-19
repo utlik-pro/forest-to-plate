@@ -27,7 +27,7 @@ const FooterSection = () => {
       <div className="max-w-6xl mx-auto mt-8 text-center">
         <p className="text-muted-foreground/50 text-xs font-light inline-flex items-center gap-1 justify-center w-full">
           Сделано с любовью{" "}
-          <Heart className="w-3 h-3 fill-current" />
+          <Heart className="w-3 h-3 fill-red-500 text-red-500" />
           {" "}в{" "}
           <a
             href="https://t.me/dmitryutlik"
@@ -35,7 +35,7 @@ const FooterSection = () => {
             rel="noopener noreferrer"
             className="italic hover:text-muted-foreground transition-colors"
           >
-            Utlik<span className="font-bold">.</span>Co
+            Utlik<span className="font-black text-sm">.</span>{" "}Co
           </a>
         </p>
       </div>
