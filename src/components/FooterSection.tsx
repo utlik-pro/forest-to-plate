@@ -33,9 +33,9 @@ const FooterSection = () => {
             href="https://t.me/dmitryutlik"
             target="_blank"
             rel="noopener noreferrer"
-            className="italic hover:text-muted-foreground transition-colors"
+            className="italic font-bold hover:text-muted-foreground transition-colors"
           >
-            Utlik<span className="font-black text-sm">.</span>{" "}Co
+            Utlik.{" "}Co
           </a>
         </p>
       </div>
